@@ -5,21 +5,21 @@
 class Portless < Formula
   desc "Replace port numbers with stable, named .localhost URLs for local development."
   homepage "https://github.com/acmacalister/portless"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/acmacalister/portless/releases/download/v0.1.0/portless_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c539d1d765bfe58b77c73d72623b05f477090d060c2ed59fb98da08f74bf75fd"
+      url "https://github.com/acmacalister/portless/releases/download/v0.1.1/portless_0.1.1_darwin_amd64.tar.gz"
+      sha256 "a30a9c7cc2b1e80901f149f0cb9ecf9a8e1a1d43011e6f99053c18c417878bce"
 
       define_method(:install) do
         bin.install "portless"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/acmacalister/portless/releases/download/v0.1.0/portless_0.1.0_darwin_arm64.tar.gz"
-      sha256 "de26ac38716e8e6367142be48cef2c299fa0be28e7beb34dc464bb861daf10a7"
+      url "https://github.com/acmacalister/portless/releases/download/v0.1.1/portless_0.1.1_darwin_arm64.tar.gz"
+      sha256 "d93cc8b308706f9eea9f0433666a3428cd29858f19f744b2ba0b7681963917c5"
 
       define_method(:install) do
         bin.install "portless"
@@ -29,15 +29,15 @@ class Portless < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acmacalister/portless/releases/download/v0.1.0/portless_0.1.0_linux_amd64.tar.gz"
-      sha256 "912b855cd3863e02e892537a79e312dd19de3640616f9970800f69633d764b1a"
+      url "https://github.com/acmacalister/portless/releases/download/v0.1.1/portless_0.1.1_linux_amd64.tar.gz"
+      sha256 "3ef1a829affc6be00d2cb91676e098d4f7f971482c2a89ff9459a9b508cc1555"
       define_method(:install) do
         bin.install "portless"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/acmacalister/portless/releases/download/v0.1.0/portless_0.1.0_linux_arm64.tar.gz"
-      sha256 "33ac9997ea75da3385ae5397e4b654b858af6311cd8afc5d2875eede7cbb0509"
+      url "https://github.com/acmacalister/portless/releases/download/v0.1.1/portless_0.1.1_linux_arm64.tar.gz"
+      sha256 "d54504e8d506ad40f68e053da24b035ffdab925f3261cf69e146d52f94c40e89"
       define_method(:install) do
         bin.install "portless"
       end
